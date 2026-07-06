@@ -29,7 +29,8 @@ flowchart TD
     JF["⚙️ JOURNEY FACTORY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     1. REST API + rate limiter + request queue
     2. Semantic search — MiniLM, local, no API key
-    3. SongPicker → SongFetcher → ContentWriter → FactChecker → NarrationGenerator → GraphLinker
+    3. SongPicker → SongFetcher → ContentWriter
+    &nbsp;&nbsp;&nbsp;&nbsp;→ FactChecker → NarrationGenerator → GraphLinker
     4. MCP server — iTunes · MusicBrainz · Wikipedia
     5. Kokoro-82M ONNX TTS — runs locally, no API key
     6. Quality gate — autonomous publish decision"]
