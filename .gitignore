@@ -28,3 +28,9 @@ data/requests/
 
 # Logs
 *.log
+
+# Internal Claude Code file
+CLAUDE.md
+
+# Runtime demand log (user queries)
+data/demand_log.jsonl
