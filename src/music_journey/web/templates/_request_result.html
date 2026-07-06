@@ -1,0 +1,17 @@
+{% if status == "queued" %}
+<div class="request-result request-result--success">
+  <strong>Request received.</strong> We'll add it to the library — check back in a few hours.
+</div>
+{% elif status == "rejected" %}
+<div class="request-result request-result--error">
+  <strong>Can't take that one.</strong> {{ message }}
+</div>
+{% elif status == "rate_limited" %}
+<div class="request-result request-result--warn">
+  <strong>Slow down.</strong> {{ message }}
+</div>
+{% else %}
+<div class="request-result request-result--error">
+  {{ message }}
+</div>
+{% endif %}

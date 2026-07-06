@@ -1,0 +1,836 @@
+[
+  {
+    "id": "journey:great-migration",
+    "title": "What the South Sent North",
+    "subtitle": "The blues went up and never came back",
+    "theme": "geopolitical movement",
+    "blurb": "Between 1910 and 1970, six million Black Americans left the rural South and moved north, fleeing Jim Crow laws and searching for work, dignity, and safety. They brought their music with them — and that music collided with electric amplifiers, assembly lines, radio towers, and city streets. What came out the other side was the soundtrack of the 20th century. This journey follows that arc: eight songs, eight cities, eighty years.",
+    "closing_paragraph": "The Great Migration moved six million people. It also moved their music — from the acoustic Delta blues of Robert Johnson's 1936 hotel room, through the electrified Chicago clubs of Muddy Waters, across the assembly lines of Detroit, into the gospel-soaked soul of Aretha Franklin, and finally north again to the Bronx, where the grandchildren of migrants invented a new genre from scratch. Kendrick Lamar's 'Alright' closes this arc from Compton — the West Coast city that became its own Great Migration story. The music never stopped moving.",
+    "intro_audio_url": "/audio/journey:great-migration/intro.wav",
+    "outro_audio_url": "/audio/journey:great-migration/outro.wav",
+    "image_url": null,
+    "prompt_chips": [
+      "Take me somewhere political",
+      "A story that moves across a map"
+    ],
+    "categories": [
+      "geography",
+      "society and culture",
+      "genre"
+    ],
+    "songs": [
+      {
+        "position": 1,
+        "title": "Cross Road Blues",
+        "artist": "Robert Johnson",
+        "month_year": "November 1936",
+        "place": "San Antonio, Texas",
+        "blurb": "Robert Johnson recorded this in a makeshift studio in a San Antonio hotel room in November 1936 — one of only two recording sessions in his short life. He was from the Mississippi Delta, the poorest and most violently racist corner of America. The 'crossroads' of the title is literal: a meeting of dirt roads outside Clarksdale, Mississippi. But it is also the crossroads at which the Great Migration begins — the moment a Black Southerner looks north and decides to leave. Johnson would die at 27, never making it himself. His music would travel without him.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_01.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/75/7c/09757c03-1ea2-9955-d02f-08dea6eaca41/mzaf_8322933985714012636.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/01/0c/76/mzi.ctafvhuh.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "Hoochie Coochie Man",
+        "artist": "Muddy Waters",
+        "month_year": "January 1954",
+        "place": "Chicago, Illinois",
+        "blurb": "Muddy Waters left the Delta in 1943 and arrived in Chicago with a guitar and a suitcase. By 1954 he was recording for Chess Records on South Michigan Avenue with an electric guitar turned all the way up — the Delta blues amplified for factory workers who needed music loud enough to hear over the noise in their heads. Listen for Robert Johnson's ghost in the guitar line. The South Side of Chicago, where Muddy lived, had grown from a small Black neighbourhood into a city within a city, swelled by migrants from Mississippi, Alabama, and Arkansas.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_02.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/25/ad/9d/25ad9d77-3228-fb9e-aedc-0e1c5a0e16b3/mzaf_7381987597303571515.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0c/12/cf/0c12cfd9-7746-2645-3f6d-635c4c1b29c8/17UM1IM31341.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "month_year": "March 1958",
+        "place": "Chicago, Illinois",
+        "blurb": "Chuck Berry wrote the first great immigrant's dream song in rock and roll — a 'coloured boy' from the Louisiana backwoods who 'could play the guitar just like ringin' a bell.' Berry recorded it in March 1958 at the same Chess Studios on South Michigan Avenue in Chicago as Muddy Waters, two floors above, fusing Delta blues with country boogie. The song is partly autobiographical: Berry had grown up in St. Louis, his parents migrants from the South. Within months of its release, this record had crossed the Atlantic and landed in the hands of a teenager named Keith Richards. The Great Migration had gone global.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_03.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/06/be/61/06be610b-988c-883a-0114-519be3e16032/mzaf_7543790691718330762.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/86/9f/74869f4f-c52b-289b-31a7-9ac9fec31e2d/06UMGIM70785.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "My Girl",
+        "artist": "The Temptations",
+        "month_year": "November 1964",
+        "place": "Detroit, Michigan",
+        "blurb": "Detroit was the other end of the Illinois Central Railroad line that carried migrants out of Mississippi. By the 1950s, hundreds of thousands of Black Southerners were working in its auto plants. Berry Gordy, whose own parents had migrated from Georgia, founded Motown Records in 1959 in a two-storey house on West Grand Boulevard and modelled it deliberately on the Ford assembly line down the road. The Temptations recorded 'My Girl' there in late 1964 — Motown's polished answer to the Delta blues: the same emotional depth, the same gospel root, packaged for pop radio and aimed at white teenagers. It worked. Integration, via vinyl.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_04.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/b3/ef/99b3ef00-3e74-5dfa-0d2e-4128ef5a9f0c/mzaf_12879689053309664622.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/84/2d/f1/842df19d-e5f4-3b9f-9405-6779bbc43fe0/06UMGIM07353.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "Respect",
+        "artist": "Aretha Franklin",
+        "month_year": "February 1967",
+        "place": "New York City, New York",
+        "blurb": "Aretha Franklin's father was a Baptist preacher from Memphis who migrated to Detroit. Aretha grew up in Detroit, sang in his church, and eventually moved to New York. She took Otis Redding's song — written by a Black man from Dawson, Georgia — and transformed it into something Redding himself said he had not understood until he heard her version. Her demand for 'a little respect' landed in 1967, the year of the Detroit riots, the year Stokely Carmichael coined 'Black Power.' The grandchildren of the Great Migration were no longer asking to be included. They were making demands.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_05.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ee/3d/73/ee3d7366-bdcb-1370-a807-e9a138345974/mzaf_8633168135836320660.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/31/ee/d131eec4-614c-d661-b580-3dc32b8547e8/603497896622.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "What's Going On",
+        "artist": "Marvin Gaye",
+        "month_year": "January 1971",
+        "place": "Detroit, Michigan",
+        "blurb": "Marvin Gaye's parents had migrated from Washington D.C. — not the South, but the same story. By 1971, the cities the migrants had built were crumbling: Detroit was still smoking from the 1967 riots, Vietnam veterans were coming home to unemployment, and the promises of the Civil Rights Act felt hollow. Berry Gordy refused to release this record, calling it uncommercial. Gaye released it anyway. It is the most politically honest thing Motown ever produced — a man raised on gospel and doo-wop asking, in the quietest possible voice, what the point of all this was.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_06.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/f3/f4/08f3f452-b24f-e25b-92bc-15850f1bdc6a/mzaf_14002930736666872327.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "The Message",
+        "artist": "Grandmaster Flash and the Furious Five",
+        "month_year": "July 1982",
+        "place": "South Bronx, New York",
+        "blurb": "The South Bronx in 1982 was a war zone — arson, poverty, collapsed public services. The children and grandchildren of the Great Migration, who had moved north expecting factories and opportunity, found instead housing projects and unemployment. Hip hop was born here, in the wreckage. Grandmaster Flash and the Furious Five's 'The Message' is the blues with no guitar: the same unflinching witness, the same geography of despair, the same question Robert Johnson was asking in the Delta — how do you survive a world that was designed to destroy you? Don't push me, says Melle Mel, 'cause I'm close to the edge.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_07.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/14/c2/5714c2ac-66b9-d6d9-cffa-5a19b7971c11/mzaf_7606060811654518263.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c2/34/48/c234484e-a6f3-4355-6d41-24275da82c74/s06.kststhcn.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 8,
+        "title": "Alright",
+        "artist": "Kendrick Lamar",
+        "month_year": "June 2015",
+        "place": "Compton, California",
+        "blurb": "The arc of the Great Migration eventually reached California. Compton became a new South Side: a community built by Black migrants from Louisiana and Texas, then abandoned by industry and policed with brutality. Kendrick Lamar grew up there. Released in June 2015, 'Alright' became the anthem of the Black Lives Matter movement — protesters chanting 'we gon' be alright' in the streets. Lamar's production samples jazz, gospel, and funk; his flow carries the DNA of every artist in this journey. Eighty years after Robert Johnson sat alone in a San Antonio hotel room, the blues is still asking the same question. It just has better speakers.",
+        "blurb_audio_url": "/audio/journey:great-migration/song_08.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/26/fa/4526fa9f-f70d-abc6-25bf-1594b9dfdb13/mzaf_14854083311939736968.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b5/a6/91/b5a69171-5232-3d5b-9c15-8963802f83dd/15UMGIM15814.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "journey:walk-a-mile",
+    "title": "Every Song Has a Sole",
+    "subtitle": "Six decades of footwear, six decades of meaning",
+    "theme": "one object across the decades",
+    "blurb": "A shoe is the most ordinary thing in the world. You own several pairs; you are wearing one right now. And yet for eighty years songwriters have reached for shoes whenever they needed to say something they couldn't say plainly — about status, sex, defiance, money, and what it means to imagine another person's life. This journey follows a single object as it walks through eight songs and refuses to stay literal. Watch it start as a thing you must not step on, and end as a metaphor you can never quite take off.",
+    "closing_paragraph": "",
+    "intro_audio_url": null,
+    "outro_audio_url": null,
+    "image_url": null,
+    "prompt_chips": [
+      "One object, many decades"
+    ],
+    "categories": [
+      "society and culture",
+      "genre"
+    ],
+    "songs": [
+      {
+        "position": 1,
+        "title": "Blue Suede Shoes",
+        "artist": "Carl Perkins",
+        "month_year": "December 1955",
+        "place": "Memphis, Tennessee",
+        "blurb": "Recorded at Sun Studio in Memphis just before Christmas 1955, this is the song that started the whole conversation. Carl Perkins built an entire rock-and-roll record around a single rule: you can knock me down, steal my car, drink my liquor — but do not step on my blue suede shoes. The shoe here is pure status, a fragile little flag of self-respect that a poor Southern kid could actually afford. Everything in this journey grows out of this first idea: that footwear is never really about feet. Elvis covered it months later and made it famous, but Perkins wrote it, and the snarl is his.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fb/c3/fb/fbc3fb6e-a50b-02a6-9ba8-016f7522d4fd/715187759824.png/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "These Boots Are Made for Walkin'",
+        "artist": "Nancy Sinatra",
+        "month_year": "November 1965",
+        "place": "Los Angeles, California",
+        "blurb": "Ten years after Perkins guarded his shoes, Nancy Sinatra weaponised hers. Recorded in Los Angeles in November 1965 with Lee Hazlewood producing, this is the shoe as instrument of power rather than object of pride — boots built for one purpose, and that purpose is walking out on a man who had it coming. Where Perkins's shoe was a thing to protect, Sinatra's is a thing to use. The descending bassline sounds exactly like a woman walking away and not looking back. The motif has shifted in a single decade: footwear is now agency.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/e0/e0/95e0e041-fe07-d5c1-1b28-95e3ccf36f88/196292057867.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "Boogie Shoes",
+        "artist": "KC and the Sunshine Band",
+        "month_year": "1975",
+        "place": "Hialeah, Florida",
+        "blurb": "By the mid-seventies the shoe stops meaning anything at all — and that's the point. KC and the Sunshine Band cut this at TK Records in Hialeah, Florida in 1975, and it is footwear stripped of metaphor and handed straight to the dancefloor. Sinatra's boots had somewhere to go; these boogie shoes just want to move. It's the lightest stop on the journey on purpose: a reminder that sometimes a shoe is gloriously, frictionlessly literal, and that disco's genius was making the body the only argument that mattered. Hold onto this lightness, because the object is about to get heavy again.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/41/23/fd/4123fd3e-8362-835d-f431-3c5db1a826a2/603497904792.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "The Angels Wanna Wear My Red Shoes",
+        "artist": "Elvis Costello",
+        "month_year": "1977",
+        "place": "London, England",
+        "blurb": "Recorded at the tiny Pathway Studios in north London in 1977 for Elvis Costello's debut album, this is the shoe turned strange and ironic. After disco's straightforwardness, Costello drags footwear back into the realm of the cryptic: red shoes coveted by angels, an image borrowed half from a fairy tale and half from pure nervous wordplay. Where KC wanted you to dance, Costello wants you slightly off-balance. The shoe is now a punk-era riddle — a bright object that means everything and nothing, daring you to decode it.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1d/e0/20/1de0208c-9781-b10e-d92d-51db8387dc36/00602517260917.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "Goody Two Shoes",
+        "artist": "Adam Ant",
+        "month_year": "May 1982",
+        "place": "London, England",
+        "blurb": "It's 1982 and still London. Adam Ant takes the shoe into the MTV age. 'Goody two shoes' is an idiom older than any song here — the impossibly virtuous innocent — and Ant uses it as a taunt: don't drink, don't smoke, what DO you do? The shoe has now fully detached from the foot and become a label you stick on a person. Costello made footwear a private riddle; Ant makes it a public accusation. The journey is climbing the ladder of abstraction, and we're nearly at the top.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/09/de/b4/09deb44c-e956-6d43-e4cf-840784faf7d7/mzi.ogdifckc.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "My Adidas",
+        "artist": "Run-DMC",
+        "month_year": "1986",
+        "place": "New York City, New York",
+        "blurb": "Run-DMC recorded this at Chung King Studios in New York City in 1986, and it closed the circle back to Carl Perkins — and then blew it wide open. Like 'Blue Suede Shoes,' it's a record about a specific, beloved, status-bearing pair of shoes. But Run-DMC did something no songwriter before them had managed: the song became the product. Adidas signed the group to the first major endorsement deal between a sneaker brand and musicians, worth a million dollars. The shoe is no longer a metaphor for status — it IS the economy. Footwear has become the message and the merchandise at once.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/da/76/21/da762101-ee6b-d3b5-954e-9dab4c16c45a/078221640824.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "Diamonds on the Soles of Her Shoes",
+        "artist": "Paul Simon",
+        "month_year": "1986",
+        "place": "New York City, New York",
+        "blurb": "Also from 1986, but reaching in the opposite direction, this 'Graceland' track by Paul Simon — built on vocals from Ladysmith Black Mambazo and overdubbed at the Hit Factory in New York — turns the shoe into a quiet meditation on wealth and its absence. A rich girl wears diamonds on her soles; a poor boy has empty pockets. The shoe measures the distance between two lives. Where Run-DMC made footwear into commerce, Simon makes it into class itself — the literal ground two people stand on, and how unequal that ground is.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/92/0c/8c/920c8c14-cf08-a973-e4c1-8792f1e9183c/886443445680.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 8,
+        "title": "Walking in My Shoes",
+        "artist": "Depeche Mode",
+        "month_year": "1993",
+        "place": "Madrid, Spain",
+        "blurb": "The journey ends where the idiom always wanted to take it. Depeche Mode recorded this in Madrid in 1993 during the fraught 'Songs of Faith and Devotion' sessions — and it is the shoe as the oldest moral instruction we have: before you judge me, try walking in my shoes. Every song before this one used footwear to talk about the self — my status, my power, my brand, my class. Dave Gahan finally uses it to talk about somebody else, and the impossibility of ever truly inhabiting another person's experience. The most ordinary object in the world, after eight songs, has become the whole problem of empathy. You can take the shoes off now. The metaphor stays on.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d0/e0/ed/d0e0edf6-68d3-d385-5067-4317d47f70f0/0094637006757.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop",
+    "title": "Your Favorite Song Has a Passport",
+    "subtitle": "The sounds Western pop borrowed and never returned",
+    "theme": "global crossover",
+    "blurb": "The sonic thread running through these seven songs is a particular kind of tension — a note that resists resolving the way your ear expects. That’s the Phrygian scale, or the drone, or the half-step intervals that give Middle Eastern and Indian melodies their distinctive ache. Western pop kept reaching for it because those sounds do something a standard major chord progression simply can’t: they create a feeling of distance, of elsewhere. What you’ll hear across fifty years of music is how that feeling got extracted and distilled — from an actual sitar tuned to a raga in a London studio, to a borrowed scale on electric guitar, to a 17th-century Yemeni melody dropped into a synth-pop track, to a single synthesizer hook in a trap beat. The ornamentation fell away with each generation. The instruments changed. The modal tension at the center — that half-step that won’t quite settle — stayed put the whole time.",
+    "closing_paragraph": "The drone never disappeared. What started as an actual tanpura ringing under Harrison’s sitar in 1966 became, by 2013, a synth line built from the same modal intervals — the same half-steps, the same refusal to resolve the way Western ears expect. Each generation of producers stripped away a bit more: fewer instruments, less ornamentation, the borrowed element compressed into a single repeating hook. What persisted wasn’t any specific instrument or tradition. It was a particular interval, a particular feeling of suspension. The sound traveled from the concert hall to the club to the radio in pieces, and it never fully arrived anywhere.",
+    "intro_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/intro.wav",
+    "outro_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/outro.wav",
+    "image_url": null,
+    "prompt_chips": [],
+    "categories": [
+      "geography",
+      "society and culture"
+    ],
+    "songs": [
+      {
+        "position": 1,
+        "title": "Love You To",
+        "artist": "The Beatles",
+        "month_year": "April 1966",
+        "place": "London, England",
+        "blurb": "George Harrison recorded 'Love You To' with The Beatles in London in April 1966, and it's the first place in this journey where the Eastern sounds aren't decorative — they're structural. The tanpura drone sustains a continuous tonic note underneath the entire track; the tabla locks into a rhythmic cycle called a tal; the melody moves through a raga, following specific rules about which notes can be approached from below and which from above. Harrison had been studying with Ravi Shankar, and it shows: this isn't a guitar player reaching for an unusual timbre. It's a Western musician learning a different logic for how music moves. Indian music doesn't resolve the way Western harmony does — it circles. That circling quality, that refusal to land on a final cadence, is what pop kept borrowing long after the sitar itself had gone back in its case.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_01.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/58/4a/10/584a1058-de0a-6a6b-d0bd-da09a028b8bc/00602567705499.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "Paint It Black",
+        "artist": "The Rolling Stones",
+        "month_year": "March 1966",
+        "place": "Los Angeles, California",
+        "blurb": "The Rolling Stones recorded ‘Paint It Black’ in Los Angeles in March 1966 — the same year as ‘Love You To,’ but a very different use of the sitar. Brian Jones runs a descending chromatic riff that owes more to blues guitar than to Ravi Shankar: it’s borrowing the timbre of the instrument — that buzzing, reedy, metallic string sound — without the structural logic of the raga. The chord progression underneath is a minor blues, grounded in Western harmony, and Jones’s sitar plays over it the way a lead guitar would. Where Harrison was learning a different musical system, the Stones were importing a texture. The darkness of the minor key plus the unfamiliar buzz of the sitar created a specific mood: vaguely threatening, geographically unmoored. That mood is the thing that traveled forward, long after the specific instrument fell out of fashion in Western rock.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_02.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/89/04/cd890449-e58f-7257-2c60-9c8c31f24ce3/13ABKIM00063.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "Kashmir",
+        "artist": "Led Zeppelin",
+        "month_year": "May 1974",
+        "place": "London, England & New York City, New York",
+        "blurb": "Led Zeppelin recorded 'Kashmir' across sessions in London and New York in 1974 — and there is no sitar anywhere on it. What Page and Bonham figured out was that you don't need the instruments; you need the intervals. The main riff sits in a mode that includes a raised fourth, giving it an open, slightly disorienting feel. More importantly, the riff runs in 4/4 while the orchestral arrangement plays in 3/4, creating a constant metric clash that never fully resolves. That non-resolution is the point: the music keeps moving, keeps promising arrival, and keeps deferring it. It's the same effect a drone creates, accomplished entirely through rhythmic tension between instrument groups. By 1974, the Eastern influence had migrated from specific instruments into the underlying logic of how the music was structured.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_03.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/82/6c/5d/826c5d66-67b7-62f2-4d78-dd3c7b415e08/dj.pifhrvpa.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "Im Nin'alu",
+        "artist": "Ofra Haza",
+        "month_year": "1988",
+        "place": "Tel Aviv, Israel",
+        "blurb": "Ofra Haza recorded 'Im Nin'alu' in Tel Aviv in 1988, and it's the pivot point of this journey — the first song where a practitioner of the tradition brought it to the Western charts, rather than Western musicians borrowing from it. The melody is from a 17th-century Yemeni Jewish poem, and Haza sings it in a maqam — a specific modal scale with microtonal inflections that Western equal-tempered instruments can't fully render. Her voice bends and ornaments in ways that fall between the keys of a piano. Producer Bezalel Aloni wrapped it in Roland drum machines and synth pads, creating a surface that felt contemporary, but the melodic core refused to be domesticated. The hook — that ascending phrase that doesn't resolve the way a pop chorus should — was the exotic element. Listeners played it back trying to figure out why it wouldn't leave them alone.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_04.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/da/b7/cf/mzi.vonmjppq.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "Toxic",
+        "artist": "Britney Spears",
+        "month_year": "2003",
+        "place": "Los Angeles, California",
+        "blurb": "Britney Spears's 'Toxic' was recorded in Los Angeles in 2003, and its instantly recognizable opening string riff is directly borrowed from a melody by Indian film composer Kalyanji-Anandji — specifically the main theme from his 1965 Bollywood score. Producers Bloodshy and Avant ran it through a string arrangement that sounds Western on first listen, but the melodic contour is intact: it moves through an ascending phrase that doesn't behave like standard pop melody, ending on a note that creates tension rather than release. That unresolved tension is what makes the hook addictive. Unlike Haza, who brought a tradition from the inside, or Zeppelin, who abstracted it into rhythm, 'Toxic' works by splicing a specific melodic shape — its exact contour, not just its feel — into a pristine pop production. The borrowed element is the song.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_05.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/38/8b/7a/388b7a8f-10ff-a4e0-7624-65e29ac6a793/828765374828.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "Turn Down for What",
+        "artist": "DJ Snake & Lil Jon",
+        "month_year": "June 2013",
+        "place": "Los Angeles, California",
+        "blurb": "DJ Snake and Lil Jon released 'Turn Down for What' in June 2013, recorded in Los Angeles, and its lead synth melody is built on a Phrygian-dominant scale — the same mode that underlies flamenco, North African music, and much of what Western ears have come to recognize as sounding Middle Eastern. The defining feature of that scale is a half-step interval between the second and third degrees, which creates a quality of hovering tension. DJ Snake stripped the arrangement down to almost nothing: that riff, a kick drum, and a bass drop. There's no mistaking what the song is built on — the borrowed element isn't buried in the production or dressed up as atmosphere. It is the production. What took rock bands full orchestral arrangements to achieve in the 1970s, dance music compressed into four bars and a drop.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_06.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/54/4a/6d/544a6dc7-8d93-a8fe-74cc-530f4c078620/886444410779.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "Dark Horse",
+        "artist": "Katy Perry ft. Juicy J",
+        "month_year": "June 2013",
+        "place": "Santa Barbara, California",
+        "blurb": "Katy Perry and Juicy J recorded 'Dark Horse' in Santa Barbara in 2013, and the borrowed element lives in the bass synth ostinato, which moves through a minor scale with a flattened second — Phrygian territory again, the same modal flavor as 'Turn Down for What.' But unlike that track, where the modal melody was explicit and central, here the feel is atmospheric — it colors the production without driving it. What's telling is that listeners consistently described 'Dark Horse' as having an Egyptian sound, even though no Egyptian music was involved in making it. By 2013, the sonic signifier had become so abstracted from its sources that 'Eastern' meant something like 'minor key with unusual intervals and synth textures.' The borrowed sound had become a genre convention — a color available in the palette, source optional.",
+        "blurb_audio_url": "/audio/journey:borrowed-melodies-the-global-journey-of-eastern-sounds-in-western-pop/song_07.wav",
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/36/21/81/36218129-51b4-df22-cafb-8e9503b53147/13UAAIM70445.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "journey:on-her-own-terms",
+    "title": "Turns Out Women Had Opinions",
+    "subtitle": "Pop anthems that weren't asking permission",
+    "theme": "feminist pop",
+    "blurb": "What runs through these eight songs isn't a chord progression — it's a vocal grammar. Each one addresses someone directly, the implied \"you\" of the title or lyric often an unnamed authority, a partner, or an idea of what women were supposed to want. And in every case, the voice is doing something specific with that address: landing the line like a statement rather than a request, letting the silence after the hook work the way a period does. You can hear the production change completely across six decades — from the lush orchestral strings behind Lesley Gore in 1963 to the distorted guitars behind Olivia Rodrigo in 2021. The sonic clothing is different in every era. But the moment each song hits its chorus, the same thing happens: the voice stops negotiating. It starts stating. The instrumentation changes to match whatever decade it is; the posture of the voice doesn't change at all.",
+    "closing_paragraph": "What you've been following across sixty years isn't a political argument — it's a way of placing a note. Of landing a phrase with the finality of a period instead of a question mark. The orchestras and drum machines and distortion pedals are just the era talking. Underneath each production is the same vocal decision: don't ask, state. From Lesley Gore's crisp delivery in 1963 to Olivia Rodrigo's scream in 2021, each song finds its own version of that landing. The topics evolved, but the grammar held. Every decade, a new voice, a new sound, the same sentence structure. Statement. Not question.",
+    "intro_audio_url": "/audio/journey:on-her-own-terms/intro.wav",
+    "outro_audio_url": "/audio/journey:on-her-own-terms/outro.wav",
+    "image_url": null,
+    "prompt_chips": [],
+    "categories": [
+      "identity",
+      "society and culture"
+    ],
+    "songs": [
+      {
+        "position": 1,
+        "title": "You Don't Own Me",
+        "artist": "Lesley Gore",
+        "month_year": "November 1963",
+        "place": "New York City, New York",
+        "blurb": "Lesley Gore was 17 when she recorded ‘You Don’t Own Me’ in New York City in November 1963, arranged by Quincy Jones. The arrangement is orchestral pop — lush strings, a rhythm section holding strict time, nothing unusual in the production. What’s unusual is what Jones built into the dynamics: the orchestra swells on the word \"free,\" making the instrumentation itself underline the declaration. Gore’s phrasing is the real story. She sings \"don’t tell me what to do\" with the cadence of a statement, not a plea — no upward inflection at the end of the phrase, no softening in the delivery. The melody descends on the word \"own,\" dropping the melodic line precisely on the syllable that carries the lyric’s weight. From the outside it sounds like a pop song. From the inside, every musical decision is pointed the same direction: this is not negotiable.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_01.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/60/61/6a/60616abf-f1f9-df63-656b-8cf01ed85969/mzaf_5149649764246276508.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d3/20/64/d3206402-031e-fed4-6b1c-4531d0193c17/00602547891587.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "I Am Woman",
+        "artist": "Helen Reddy",
+        "month_year": "July 1972",
+        "place": "Los Angeles, California",
+        "blurb": "Helen Reddy recorded 'I Am Woman' in Los Angeles in July 1972, and the production is intentionally sparse for the era: acoustic guitar, light rhythm section, a choir that enters only for emphasis. The simplicity is part of the argument — the song doesn't need to be big to be sure of itself. Musically, what drives it is a call-and-response structure between verses and chorus: Reddy sings almost intimately in the verse, and the chorus opens up into affirmation, the backing vocalists arriving on \"I am woman\" to confirm what she's already stated. That soft-to-strong arc within each section — the quiet statement that expands outward rather than the loud declaration that immediately announces itself — became a template for the empowerment anthem as a form. Every song in this journey that follows knows this structure.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_02b.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/38/72/9138726c-bd26-c4ee-4acd-89d1c98d398b/mzaf_6727863251828068225.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/21/68/ca/2168ca8f-a590-c27b-a606-d8a03ca07291/00077774649056.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "Girls Just Want to Have Fun",
+        "artist": "Cyndi Lauper",
+        "month_year": "September 1983",
+        "place": "New York City, New York",
+        "blurb": "Cyndi Lauper recorded 'Girls Just Want to Have Fun' in New York City in September 1983, and there's something rhythmically unusual happening in it: the chorus hook lands on beat three rather than the expected beat one, giving the melody an off-kilter, slightly giddy momentum — like catching yourself mid-spin and deciding to keep going. The synths have that deliberately cheap, Casio-keyboard texture of early-80s pop production, which works as an argument: this doesn't need to be expensive to matter. Lauper's voice swoops and bends around the melody with a jazz-inflected freedom, slipping off pitches and reconnecting with them — closer to improvisational phrasing than the era's typical polished pop singing. After Helen Reddy's choir-backed affirmation, this is the same message delivered lighter, faster, and on the wrong beat. Which is exactly the point.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_03.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/1d/ed/951ded3d-4e31-1452-42b6-cc36070a2204/mzaf_10794841548233618528.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8a/8c/13/8a8c13e0-06af-1710-7b7d-ebec65fb8361/074643893022.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "Wannabe",
+        "artist": "Spice Girls",
+        "month_year": "July 1996",
+        "place": "London, England",
+        "blurb": "The Spice Girls recorded 'Wannabe' in London in July 1996, and it's structured more like a rap song than a pop song: the verses are nearly spoken over a sparse, staccato beat, and the chorus arrives like a controlled detonation. What makes the vocal arrangement distinctive is five voices with five different timbres trading lines and overlapping — no single voice carries the melody for long. The group is the point. The \"zigga zig ah\" hook is deliberately untranslatable, pure phonetic assertion that's impossible to mishear as requesting anything. Rhythmically, the track runs at a tempo that feels urgent without being anxious. After Cyndi Lauper's synth-pop shimmy and Helen Reddy's gentle affirmation, this is the same energy reconfigured as something almost competitive — a declaration made louder by being made in unison.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_04.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/cb/c6/dbcbc688-8277-b365-8deb-1da3c30da079/mzaf_7842872759474974048.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e1/92/8f/e1928fcb-0204-ca19-597a-6edaf8e6ebc8/21UMGIM16233.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "Independent Women Part I",
+        "artist": "Destiny's Child",
+        "month_year": "September 2000",
+        "place": "Los Angeles, California",
+        "blurb": "Destiny's Child recorded 'Independent Women Part I' in Los Angeles in September 2000 for the Charlie's Angels soundtrack, and the rhythm is the argument: the production is built on a staccato horn sample that drives the beat as much as the drums do. Every syllable of the hook — the house I live in, I bought it, the car I'm driving, I bought it — lands precisely on a beat. There's no swing, no looseness, no decorative space. The syllables march. Beyoncé, Kelly, and Michelle trade lines in a call-and-response structure borrowed from gospel choir arrangement — individual voice then group confirmation, back and forth — but the feeling here is less devotional than declarative. Where the Spice Girls overlapped chaotically, Destiny's Child is synchronized. The precision is the statement.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_05.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/dc/5b/02dc5bdf-c940-52ef-0b88-9e5962b7b2d6/mzaf_11713159090506273709.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/67/1c/f9/mzi.giffxgjz.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "Run the World (Girls)",
+        "artist": "Beyoncé",
+        "month_year": "April 2011",
+        "place": "New York City, New York",
+        "blurb": "Beyoncé recorded 'Run the World (Girls)' in New York in April 2011, and it samples 'Pon de Floor' by Major Lazer — a track built on a polyrhythmic structure from West African and Caribbean music traditions. The percussion doesn't march in straight time; it rolls in overlapping cycles, multiple rhythmic patterns running simultaneously, generating continuous forward momentum without an obvious single beat to lock onto. That's a fundamentally different musical argument than 'Independent Women Part I': where that song stated its point in straight-ahead time, this one sustains and loops it, refusing to resolve. Beyoncé's chant sits on top of the polyrhythm and keeps returning, the repetition functioning like insistence rather than emphasis. Same declaration — women run the world — delivered as a sustained fact rather than a single statement.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_06.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/be/db/6cbedb5b-2ef4-40fb-6100-1c184a0cafba/mzaf_15780755101018906748.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/d1/31/65/d1316515-6d7f-d43c-0100-be137be227fd/886443760325.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "Truth Hurts",
+        "artist": "Lizzo",
+        "month_year": "September 2017",
+        "place": "Los Angeles, California",
+        "blurb": "Lizzo recorded 'Truth Hurts' in Los Angeles in September 2017 — it went largely unnoticed before streaming data made it a phenomenon two years later. The production is trap-influenced: 808 bass, sparse hi-hat patterns, a beat that sits low and spare. What Lizzo does inside that production is bring a gospel-trained vocal technique — she grew up singing in church — and deliver it with the rhythmic precision of a rapper. The hook, 'I just took a DNA test, turns out I'm 100% that bitch,' is placed syllable by syllable on specific beats; it's measured, not sung freely. The contrast between her actual vocal size and the conversational, almost casual delivery of the line is what makes it land. The smaller she sounds, the larger the statement.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_07.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/ed/61/9aed61e9-8df6-2a2f-6bf8-2e762560c401/mzaf_7966780389104717740.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ca/6f/0f/ca6f0f23-358c-3d23-360f-20cc1f5ce8fd/075679824615.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 8,
+        "title": "good 4 u",
+        "artist": "Olivia Rodrigo",
+        "month_year": "February 2021",
+        "place": "Los Angeles, California",
+        "blurb": "Olivia Rodrigo and producer Dan Nigro recorded ‘good 4 u’ in Los Angeles in February 2021, and it’s the only song in this journey where the guitars are distorted and the drums hit like something is breaking. The chord progression is pop-punk standard — the same I-V-vi-IV pattern behind a hundred other songs — but the tempo is clocked faster than comfortable, which creates a feeling of urgency just below the surface of the verse. That verse is controlled, precise, almost girlish. Then the chorus arrives and the dynamic breaks open: Rodrigo goes from singing to screaming, the guitars crash, the drums double in intensity. The gap between the restrained verse and the exploding chorus is where the song lives. Sixty years after Lesley Gore sang over lush strings in 1963, this is the same sentence structure — delivered at full volume, in a different key, with the amplifiers on.",
+        "blurb_audio_url": "/audio/journey:on-her-own-terms/song_08.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/bd/f1/9fbdf1ce-12d9-7440-1c1c-3fed40567619/mzaf_7303839465958373073.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/46/48/76464884-0e9c-1951-a3f6-ce02f74c2b19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "journey:nobody-planned-this",
+    "title": "Nobody Planned This",
+    "subtitle": "New Orleans accidentally invented everything",
+    "theme": "birth of jazz",
+    "blurb": "What you're about to hear across these seven recordings is one thing slowly learning to breathe. The earliest tracks are all precision — musicians reading charts, beats landing exactly on the clock, rhythms placed where the written music tells them to go. Then, somewhere in the middle of this journey, something loosens. A note gets bent. A phrase starts just before the beat instead of on it. The silences between notes begin to carry as much meaning as the notes themselves. That loosening is what swing actually is — one of the genuinely mysterious qualities in music, because everyone can hear it immediately and almost nobody can define it. What these seven recordings document, collectively, is its invention: the moment when African American syncopation stopped being a novelty and started being a grammar, and the way that grammar got more relaxed, more confident, and more irresistible with every passing year.",
+    "closing_paragraph": "From James Reese Europe's clipped, precise 1914 syncopation to Bennie Moten's deep, floating groove in 1932, you've just heard a rhythm section learn how to swing. What changed across those eighteen years wasn't the tempo or the instruments — it was where the musicians placed the beat relative to the clock. Each generation sat on it a little later, let it breathe a little longer. The riffs got simpler. The soloists got bolder. The rhythm section stopped announcing the beat and started implying it. By 1932, the music wasn't pushing forward anymore — it was pulling. That pull is what the next thirty years of American music would be built on.",
+    "intro_audio_url": null,
+    "outro_audio_url": null,
+    "image_url": null,
+    "prompt_chips": [],
+    "categories": [],
+    "songs": [
+      {
+        "position": 1,
+        "title": "Castle House Rag",
+        "artist": "James Reese Europe's Society Orchestra",
+        "month_year": "February 1914",
+        "place": "New York City",
+        "blurb": "James Reese Europe's Society Orchestra recorded 'Castle House Rag' in New York City in February 1914 — one of the first times a Black American dance orchestra committed its sound to record. The rhythm is straight and precise, rooted in the march tradition: the beat lands exactly where it's supposed to, the tempo is held strictly, the whole ensemble breathes together on command. But listen for the banjos in the rhythm section locking into the offbeat — accenting two and four rather than one and three. That accent on the weak beats is the seed. Everything that follows in this journey is an elaboration of what happens when you center the music not on where the beat falls but on where it doesn't. Europe's orchestra was the most disciplined working group in New York City; this is what maximum precision sounds like before jazz figured out that loosening it was the point.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/47/fa/fb/47fafbfe-d580-6385-ef52-b4b9c1752a92/1.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "Livery Stable Blues",
+        "artist": "Original Dixieland Jass Band",
+        "month_year": "February 1917",
+        "place": "New York City",
+        "blurb": "The Original Dixieland Jass Band walked into a Victor studio in New York City in February 1917 and cut the first commercially released jazz record. The band members were white musicians from New Orleans who had absorbed the style of the Black innovators working around them. What 'Livery Stable Blues' does that Europe's music didn't is break from the written chart: the animal impressions — the cornet's neigh, the clarinet's cluck, the trombone's bray — are improvised responses, musicians answering each other in real time with no written part to follow. For the first time on record, a group is talking back to itself. The music is messy, vaudevillian, sometimes barely coherent. It sold enormously, because what it transmitted — the feeling of spontaneous collective invention — was something recordings had never captured before.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/e2/84/0b/mzi.ogvdtsso.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "Ory's Creole Trombone",
+        "artist": "Spike's Seven Pods of Pepper Orchestra",
+        "month_year": "June 1922",
+        "place": "Los Angeles, California",
+        "blurb": "Kid Ory recorded this in Los Angeles in June 1922 under the alias Spike's Seven Pods of Pepper Orchestra, making it the first instrumental jazz recording by a Black New Orleans ensemble. Where the Original Dixieland Jass Band played for novelty, Ory's trombone plays for feeling. His tailgate technique involves sliding between notes rather than landing on them precisely, which brings the pitch ambiguity of the blues directly into a brass instrument. Three voices weave simultaneously: the cornet leads the melody, the clarinet plays a counter-melody above and around it, and Ory's trombone fills in the bass register below. Each instrument has its own rhythmic feel, but they lock around a common pulse. This polyphonic texture — multiple independent melodic lines coexisting without canceling each other — is the New Orleans tradition that the whole jazz language grows from.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/74/d2/1a/74d21a80-caf8-bd8b-2d41-e97557a654ab/mzi.mtidkkoo.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "Dipper Mouth Blues",
+        "artist": "King Oliver's Creole Jazz Band",
+        "month_year": "April 1923",
+        "place": "Richmond, Indiana",
+        "blurb": "King Oliver's Creole Jazz Band traveled to Gennett Studios in Richmond, Indiana in April 1923 to record 'Dipper Mouth Blues.' The band included a young Louis Armstrong on second cornet, and the two horn players perform in locked dialogue throughout: Oliver states a phrase, Armstrong shadows and harmonizes, the two lines so precisely interlocked they almost sound like a single instrument playing two-part harmony with itself. The tuba and piano keep strict time below; the clarinet weaves counter-melody above. This is collective improvisation at its most organized — everyone listening, everyone responding, but nobody soloing in the modern sense. Compared to the free polyphony of Ory's session a year earlier, Oliver's band is tighter and more rehearsed, doing something more complex: turning improvisation into something that sounds composed.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/77/31/9b/77319bb8-927a-7e21-4887-a7b2b14824c7/cover.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "Black Bottom Stomp",
+        "artist": "Jelly Roll Morton's Red Hot Peppers",
+        "month_year": "September 1926",
+        "place": "Chicago, Illinois",
+        "blurb": "Jelly Roll Morton recorded 'Black Bottom Stomp' with his Red Hot Peppers in Chicago, Illinois in September 1926, and it's the moment jazz gets architecture. The track is organized in distinct sections — ensemble opening, piano solo, clarinet solo, stop-time interlude, final ensemble — each one planned by Morton before anyone walked into the studio. He specified when to play and when to lay out, which instruments enter when, where the breaks land. And yet the New Orleans musicians he hired bring a phrasing that can't be notated: a slight drag on the beat, the way a note settles after the attack, an ease in the swing feel that only comes from having grown up hearing it. Morton contributed the architecture. The musicians contributed what makes the architecture breathe.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/90/7d/8d/907d8d48-9b9a-18bc-0771-cb2c7e45ef97/MortonArt.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "West End Blues",
+        "artist": "Louis Armstrong and His Hot Five",
+        "month_year": "June 1928",
+        "place": "Chicago, Illinois",
+        "blurb": "Louis Armstrong's Hot Five went into a Chicago studio in June 1928 and Armstrong opened 'West End Blues' with an unaccompanied cornet cadenza — thirty seconds of solo playing, no melody written underneath, just Armstrong bending notes up and down, repeating phrases at different pitch levels, building to a held high note and letting it sit. Nothing in jazz had sounded like this before. When the band entered, the contrast made the point: jazz had been a collective conversation. Armstrong was making it a monologue — or rather, making the monologue so compelling that conversation seemed beside the point. His phrasing in the rest of the track sits slightly behind the beat, using silence as punctuation, placing notes where the melody is most expressive rather than where the rhythm demands them. That approach — the soloist's authority over time — became the model for improvisation for decades.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/59/d9/83/mzi.kblbbpah.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "Moten Swing",
+        "artist": "Bennie Moten's Kansas City Orchestra",
+        "month_year": "December 1932",
+        "place": "Camden, New Jersey",
+        "blurb": "Bennie Moten's Kansas City Orchestra recorded 'Moten Swing' in Camden, New Jersey in December 1932, and the change from everything earlier in this journey is immediately physical: the rhythm floats. Earlier records had syncopation — notes strategically displaced from the beat. This has something different: the rhythm section breathes together, time is felt rather than counted, the bar lines seem to arrive from memory rather than from a metronome. The horn sections trade riffs back and forth in pure call-and-response — one section answers the other, building without escalating — and a soloist eventually emerges above it. The vocabulary of swing — four-beat pulse, riffing horns, rhythm section that implies rather than states the beat — is completely formed here. The road from James Reese Europe's precise 1914 march took eighteen years, and every step was worth it.",
+        "blurb_audio_url": null,
+        "preview_url": null,
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2c/a2/78/2ca27873-63b0-9fac-e58c-2d1d1c98586c/888002679062.jpg/600x600bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": null,
+          "youtube": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "journey:it-started-with-a-choir",
+    "title": "It Started With a Choir",
+    "subtitle": "How gospel built soul, R&B, and funk",
+    "theme": "Gospel music as the foundational pillar and community incubator for Soul, R&B, and Funk",
+    "blurb": "Gospel music has always been more than a genre; it was a community incubator, a sanctuary, and a laboratory for musical innovation. Emerging from the spirituals and choral traditions of the Black church, gospel established the fundamental building blocks of modern American music. Elements like call-and-response vocals, melismatic singing, syncopated rhythms, and raw, unrestrained emotional expression were all forged in sacred spaces before crossing over to the secular charts.\n\nThis journey traces that transformative sonic evolution. We will explore how pioneering artists adapted the ecstatic fire of the church to express earthly love, social struggle, and rhythmic liberation. Through this chronological sequence, you will hear how the communal spirit of gospel laid the groundwork for the birth of soul, the rise of R&B, and the irresistible groove of funk.",
+    "closing_paragraph": "You have just traveled through a monumental sonic migration, from the wooden pews of Mid-century churches to the glittering arenas of 1970s funk. This journey reveals that the boundary between the sacred and the secular in American music has always been beautifully thin. By taking the vocal techniques, emotional vulnerability, and communal joy of gospel and translating them for the world, these artists did not just create new genres—they built a universal language of resilience and celebration that continues to move our spirits and our feet.",
+    "intro_audio_url": "/audio/journey:it-started-with-a-choir/intro.wav",
+    "outro_audio_url": "/audio/journey:it-started-with-a-choir/outro.wav",
+    "image_url": null,
+    "prompt_chips": [
+      "Take me to church",
+      "Music that meant something bigger"
+    ],
+    "categories": [
+      "identity",
+      "society and culture"
+    ],
+    "songs": [
+      {
+        "position": 1,
+        "title": "Strange Things Happening Every Day",
+        "artist": "Sister Rosetta Tharpe",
+        "month_year": "December 1944",
+        "place": "New York City, New York",
+        "blurb": "Our journey begins with Sister Rosetta Tharpe, the godmother of rock and roll, who recorded this boundary-pushing track in December 1944 in New York City. Armed with her virtuoso electric guitar and a booming voice trained in the Church of God in Christ, Tharpe was one of the first gospel artists to achieve crossover appeal. 'Strange Things Happening Every Day' became the first gospel record to hit the Harlem Hit Parade (the predecessor to the R&B charts), proving that the spiritual intensity of sacred music could captivate secular audiences while laying the foundational guitar riffs for early rock and rhythm and blues.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_01.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2e/5e/73/2e5e7330-69d4-f0ac-b9f1-10a5915cea12/mzaf_3081489257376293271.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0b/25/09/0b250985-f15f-ab90-12a3-42e96847fe20/00602567385219.rgb.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/strange-things-happening-every-day/1362750315?i=1362751004&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 2,
+        "title": "Jesus Gave Me Water",
+        "artist": "The Soul Stirrers",
+        "month_year": "March 1951",
+        "place": "Chicago, Illinois",
+        "blurb": "Moving into the golden age of gospel, we encounter The Soul Stirrers, who recorded 'Jesus Gave Me Water' in March 1951 in Chicago, Illinois. This track marked the recording debut of a young lead singer named Sam Cooke. Building on the foundation laid by solo pioneers like Sister Rosetta Tharpe, gospel vocal quartets introduced sophisticated harmony arrangements and a smooth, emotional delivery. Cooke's effortless, melismatic vocal style in this sacred recording would soon become the definitive template for soul music when he transitioned to secular pop a few years later.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_02.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/f9/11/daf9119f-c3c7-9711-7652-87d8bc5e8aa1/mzaf_6442299101164852845.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/39/3a/8f/393a8fff-5c47-1fff-cec8-3bcf5eea40d6/06PNDIM00418.rgb.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/jesus-gave-me-water-feat-the-soul-stirrers/1444016964?i=1444017198&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 3,
+        "title": "I've Got a Woman",
+        "artist": "Ray Charles",
+        "month_year": "November 1954",
+        "place": "Atlanta, Georgia",
+        "blurb": "In November 1954, inside a radio station studio in Atlanta, Georgia, Ray Charles famously fused the sacred with the secular to create 'I've Got a Woman'. Charles took the melody and drive of a traditional gospel tune, 'It Must Be Jesus' by the Southern Tones, and replaced the spiritual lyrics with a story about a loving partner. This controversial blend of church vocal phrasing and secular blues rhythm outraged traditionalists but effectively birthed 'soul music' as a distinct genre, showing how the ecstatic energy of worship could be channeled into romantic passion.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_03.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/16/d4/f716d4cc-c011-a2d5-41d0-dcb1ee913453/mzaf_12587177036988735342.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/bd/93/22/bd9322bd-063a-9d22-a457-28ffb6ebfd20/dj.psfvjflw.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/ive-got-a-woman/80017406?i=80016519&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 4,
+        "title": "Freedom Highway",
+        "artist": "The Staple Singers",
+        "month_year": "April 1965",
+        "place": "Chicago, Illinois",
+        "blurb": "By the mid-1960s, gospel returned to its communal roots to fuel the struggle for civil rights. The Staple Singers recorded 'Freedom Highway' live at Chicago's New Nazareth Church in April 1965, shortly after marching in Selma, Alabama. Led by Roebuck 'Pops' Staples and the arresting, velvety vocals of Mavis Staples, this song demonstrates how the collective power of gospel was used as a political and social tool. Here, the spiritual sanctuary becomes a march for freedom, blending folk, gospel, and soul into a call for justice.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_04.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7e/e1/7d/7ee17dd8-8203-2423-3bb1-1e7c683e58a9/mzaf_4912895335646093279.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ae/27/c7/ae27c724-a208-c72e-2b04-5b0a6f9714af/mzi.atudptxj.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/freedom-highway/192752238?i=192753349&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 5,
+        "title": "I Never Loved a Man (The Way I Love You)",
+        "artist": "Aretha Franklin",
+        "month_year": "January 1967",
+        "place": "Muscle Shoals, Alabama",
+        "blurb": "Having honed her craft singing in her father's New Bethel Baptist Church in Detroit, Aretha Franklin brought the raw, unvarnished power of the Holy Ghost directly to secular R&B. In January 1967, at Fame Studios in Muscle Shoals, Alabama, she recorded this breakthrough hit. Franklin's performance exemplifies how Southern soul relied on the gospel vocal technique of 'testifying'—pushing the voice to its emotional limits to convey deep truths. This track established her as the undisputed 'Queen of Soul' and proved that gospel's vocal fire was the engine driving modern pop music.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_05.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/0f/b7/920fb7f6-3dff-ac0b-cae7-315ab50aec71/mzaf_17889926618036836629.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/47/0d/c0/470dc076-70e9-be30-07e5-ecee641a7604/603497902460.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/878000342?i=878000350&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 6,
+        "title": "Thank You (Falettinme Be Mice Elf Agin)",
+        "artist": "Sly and the Family Stone",
+        "month_year": "October 1969",
+        "place": "San Francisco, California",
+        "blurb": "As the 1960s drew to a close, the communal call-and-response of gospel evolved into the heavy, syncopated rhythms of funk. Sly and the Family Stone recorded 'Thank You (Falettinme Be Mice Elf Agin)' in October 1969 in San Francisco, California. Leader Sly Stone, who grew up singing in church choirs, arranged the vocals so that multiple band members shared the lead, mimicking a church congregation. Combined with Larry Graham's pioneering slap-bass technique, the song transformed gospel's message of spiritual liberation into a physical, danceable groove.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_06.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/f1/4c/5af14c47-1f40-70e9-384c-459d846279d6/mzaf_8061443575367157376.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/10/25/da102506-5da5-2b7e-c4a2-7d54155c9455/828767591025.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/thank-you-falettinme-be-mice-elf-agin-single-version/212579326?i=212580030&uo=4",
+          "youtube": null
+        }
+      },
+      {
+        "position": 7,
+        "title": "Shining Star",
+        "artist": "Earth, Wind & Fire",
+        "month_year": "September 1974",
+        "place": "Los Angeles, California",
+        "blurb": "Our journey culminates with Earth, Wind & Fire, who recorded 'Shining Star' in September 1974 in Los Angeles, California. Founder Maurice White grew up singing in gospel choirs, and he infused the band's cosmic funk with a message of spiritual empowerment and positivity. This track features the intricate, soaring vocal harmonies and driving brass arrangements that trace their lineage directly back to the gospel quartets of the 1950s, bringing the journey full circle. Earth, Wind & Fire took the communal joy of the church and shared it with the entire world on a grand, funky scale.",
+        "blurb_audio_url": "/audio/journey:it-started-with-a-choir/song_07.wav",
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/fc/60/74/fc607403-9cd3-9963-eec2-7a3646ffbd18/mzaf_14002167464187885000.plus.aac.p.m4a",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/1d/86/bc/1d86bc2d-1007-3b47-2652-f4a58fb0eaa0/dj.amgioild.jpg/100x100bb.jpg",
+        "streaming_links": {
+          "spotify": null,
+          "apple_music": "https://music.apple.com/us/album/shining-star/532975789?i=532975790&uo=4",
+          "youtube": null
+        }
+      }
+    ]
+  }
+]

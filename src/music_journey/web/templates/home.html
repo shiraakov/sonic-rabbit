@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Sonic Rabbit{% endblock %}
+
+{% block content %}
+<section class="home-hero">
+  <h1 class="home-title">Pick a sonic rabbit hole<br>and see where it takes you.</h1>
+</section>
+
+{% if miss %}
+<div class="miss-banner">
+  <p>Nothing on <strong>"{{ q }}"</strong> yet{% if closest %} — closest we've got is <a href="/j/{{ closest.id }}">{{ closest.title }}</a>{% endif %}. <a href="#request-panel" class="miss-vote" onclick="document.getElementById('request-panel').open=true">Request it ↗</a></p>
+</div>
+{% endif %}
+
+<div class="chip-row">
+  {% for chip in chips %}
+  <a href="/j/{{ chip.journey_id }}" class="chip">{{ chip.label }}</a>
+  {% endfor %}
+  <a href="/j/random" class="chip chip--special">Surprise me ↗</a>
+  <a href="#request-panel" class="chip chip--request" onclick="document.getElementById('request-panel').open=true">Request one ↗</a>
+</div>
+
+<section class="cat-section">
+  <p class="cat-label">Browse by</p>
+  <div class="cat-row">
+    {% for c in categories %}
+    <a href="/?cat={{ c.slug }}" class="cat-pill{% if active_cat == c.slug %} cat-pill--active{% endif %}">
+      <span class="cat-emoji">{{ c.emoji }}</span>{{ c.label }}
+    </a>
+    {% endfor %}
+    {% if active_cat %}
+    <a href="/" class="cat-pill cat-pill--clear">✕ Clear</a>
+    {% endif %}
+  </div>
+</section>
+
+<details class="request-panel" id="request-panel">
+  <summary class="request-trigger">+ Can't find your rabbit hole? Request one</summary>
+  <div class="request-form-wrap">
+    <form hx-post="/request" hx-target="#request-response" hx-swap="innerHTML">
+      <div class="request-fields">
+        <div class="request-field">
+          <label for="req-title">Journey title</label>
+          <input type="text" id="req-title" name="title" placeholder="e.g. Songs that ended wars" maxlength="100" required>
+        </div>
+        <div class="request-field">
+          <label for="req-desc">What's the angle?</label>
+          <textarea id="req-desc" name="description" placeholder="What era, emotion, or story arc are you after?" maxlength="300" rows="2" required></textarea>
+        </div>
+      </div>
+      <div class="request-actions">
+        <button type="submit" class="btn btn--primary">Request →</button>
+        <span class="htmx-indicator request-loading">Working on it…</span>
+      </div>
+    </form>
+    <div id="request-response"></div>
+  </div>
+</details>
+
+<section class="section">
+  <div class="journey-grid">
+    {% for journey in journeys %}
+    <a href="/j/{{ journey.id }}" class="journey-card">
+      <div class="journey-card-img">
+        {% set cover = journey.image_url or (journey.songs | selectattr('image_url') | map(attribute='image_url') | first) %}
+        {% if cover %}
+        <img src="{{ cover }}" alt="{{ journey.title }}" loading="lazy" referrerpolicy="no-referrer">
+        {% else %}
+        <img src="/static/placeholder.svg" alt="" aria-hidden="true">
+        {% endif %}
+      </div>
+      <div class="journey-card-body">
+        <span class="theme-badge">{{ journey.theme }}</span>
+        <p class="journey-card-title">{{ journey.title }}</p>
+        {% if journey.subtitle %}
+        <p class="journey-card-sub">{{ journey.subtitle }}</p>
+        {% endif %}
+        <p class="journey-card-count">{{ journey.songs|length }} songs</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

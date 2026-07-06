@@ -1,0 +1,63 @@
+<div id="step-{{ song.position }}" class="song-step">
+  <div class="song-step-header">
+    <span class="step-num">{{ song.position }}</span>
+    <div class="step-meta">
+      <h2 class="step-title">{{ song.title }}</h2>
+      <p class="step-artist">{{ song.artist }}</p>
+      <p class="step-details">{{ song.month_year }} &nbsp;·&nbsp; Recorded in {{ song.place }}</p>
+    </div>
+    {% if song.image_url %}
+    <div class="step-art">
+      <img src="{{ song.image_url }}" alt="{{ song.title }}" referrerpolicy="no-referrer">
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="podcast-unit">
+    {% if song.blurb_audio_url %}
+    <div class="narration-player">
+      <span class="narration-label">♪ Narration</span>
+      <audio id="narr-{{ song.position }}" controls src="{{ song.blurb_audio_url }}"></audio>
+    </div>
+    {% endif %}
+
+    <div class="song-blurb">{{ song.blurb }}</div>
+
+    {% if song.preview_url %}
+    <div class="preview-player">
+      <span class="preview-label">▶ Preview (30s)</span>
+      <audio id="prev-{{ song.position }}" controls src="{{ song.preview_url }}"></audio>
+    </div>
+    {% else %}
+    <p class="no-preview">Preview not available — find it on your streaming service.</p>
+    {% endif %}
+  </div>
+
+  {% if song.streaming_links.spotify or song.streaming_links.apple_music or song.streaming_links.youtube %}
+  <div class="streaming-links">
+    {% if song.streaming_links.spotify %}
+    <a href="{{ song.streaming_links.spotify }}" class="streaming-btn streaming-btn--spotify" target="_blank" rel="noopener">Spotify</a>
+    {% endif %}
+    {% if song.streaming_links.apple_music %}
+    <a href="{{ song.streaming_links.apple_music }}" class="streaming-btn streaming-btn--apple" target="_blank" rel="noopener">Apple Music</a>
+    {% endif %}
+    {% if song.streaming_links.youtube %}
+    <a href="{{ song.streaming_links.youtube }}" class="streaming-btn streaming-btn--youtube" target="_blank" rel="noopener">YouTube</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="step-actions">
+    {% if song.position < total %}
+    <button
+      class="btn btn--outline skip-btn"
+      hx-get="/j/{{ journey_id }}/step/{{ song.position + 1 }}"
+      hx-target="#step-{{ song.position + 1 }}"
+      hx-swap="outerHTML"
+      onclick="skipToStep({{ song.position + 1 }})"
+    >Next →</button>
+    {% else %}
+    <button class="btn btn--outline skip-btn" onclick="showConclusion()">Skip to closing →</button>
+    {% endif %}
+  </div>
+</div>

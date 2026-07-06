@@ -1,0 +1,71 @@
+{
+  "eval_set_id": "graph_linker",
+  "name": "graph_linker",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "link_great_migration",
+      "conversation": [
+        {
+          "invocation_id": "inv-1",
+          "user_content": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "Quality-check and validate this journey:\n{\"id\": \"journey:great-migration\", \"songs\": []}",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "{\"journey_id\": \"journey:great-migration\", \"songs_total\": 8, \"songs_metadata_verified\": 7, \"songs_missing_preview\": 2, \"songs_missing_audio\": 0, \"songs_with_unverified_claims\": 1, \"quality_flags\": [\"song 3: claim about Keith Richards unverified\"], \"reviewer_note\": \"Journey is largely verified. Song 3 contains one unverified claim about Keith Richards timing. Consider checking before publishing.\"}",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "tool_responses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1751328000.0,
+          "rubrics": null,
+          "app_details": null
+        }
+      ],
+      "conversation_scenario": null,
+      "session_input": null,
+      "creation_timestamp": 1751328000.0,
+      "rubrics": null,
+      "final_session_state": {}
+    }
+  ],
+  "creation_timestamp": 1751328000.0
+}

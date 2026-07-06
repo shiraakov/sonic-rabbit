@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#0d0d0d"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#f7f6f3" letter-spacing="2">SONIC RABBIT — ARCHITECTURE</text>
+
+  <!-- ── LEFT PANEL: Pipeline ───────────────────────── -->
+  <rect x="40" y="75" width="480" height="480" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+  <rect x="40" y="75" width="480" height="44" rx="12" fill="#2a2a2a"/>
+  <rect x="40" y="107" width="480" height="12" fill="#2a2a2a"/>
+  <text x="280" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#e8c547" letter-spacing="1">① CONTENT PIPELINE</text>
+  <text x="280" y="132" text-anchor="middle" font-size="11" fill="#888">runs once per journey · offline · build-time</text>
+
+  <!-- Stage rows -->
+  <!-- Stage 1 -->
+  <rect x="64" y="152" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="152" width="36" height="52" rx="8" fill="#e8c547" opacity="0.15"/>
+  <rect x="88" y="152" width="8" height="52" fill="#e8c547" opacity="0.15"/>
+  <text x="82" y="183" text-anchor="middle" font-size="13" font-weight="700" fill="#e8c547">1</text>
+  <text x="114" y="176" font-size="12" font-weight="700" fill="#f7f6f3">SongPicker</text>
+  <text x="114" y="193" font-size="11" fill="#888">Theme → ranked candidate list (over-generates)</text>
+
+  <!-- Stage 2 -->
+  <rect x="64" y="214" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="214" width="36" height="52" rx="8" fill="#a78bfa" opacity="0.15"/>
+  <rect x="88" y="214" width="8" height="52" fill="#a78bfa" opacity="0.15"/>
+  <text x="82" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">2</text>
+  <text x="114" y="238" font-size="12" font-weight="700" fill="#f7f6f3">SongFetcher <tspan font-size="10" fill="#a78bfa">+ MCP</tspan></text>
+  <text x="114" y="255" font-size="11" fill="#888">Fetches preview URL, album art, streaming links</text>
+
+  <!-- Stage 3 -->
+  <rect x="64" y="276" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="276" width="36" height="52" rx="8" fill="#e8c547" opacity="0.15"/>
+  <rect x="88" y="276" width="8" height="52" fill="#e8c547" opacity="0.15"/>
+  <text x="82" y="307" text-anchor="middle" font-size="13" font-weight="700" fill="#e8c547">3</text>
+  <text x="114" y="300" font-size="12" font-weight="700" fill="#f7f6f3">ContentWriter</text>
+  <text x="114" y="317" font-size="11" fill="#888">Writes intro · per-song narration · closing paragraph</text>
+
+  <!-- Stage 4 -->
+  <rect x="64" y="338" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="338" width="36" height="52" rx="8" fill="#a78bfa" opacity="0.15"/>
+  <rect x="88" y="338" width="8" height="52" fill="#a78bfa" opacity="0.15"/>
+  <text x="82" y="369" text-anchor="middle" font-size="13" font-weight="700" fill="#a78bfa">4</text>
+  <text x="114" y="362" font-size="12" font-weight="700" fill="#f7f6f3">FactChecker <tspan font-size="10" fill="#a78bfa">+ MCP</tspan></text>
+  <text x="114" y="379" font-size="11" fill="#888">Verifies dates &amp; places via MusicBrainz + Wikipedia</text>
+
+  <!-- Stage 5 -->
+  <rect x="64" y="400" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="400" width="36" height="52" rx="8" fill="#34d399" opacity="0.15"/>
+  <rect x="88" y="400" width="8" height="52" fill="#34d399" opacity="0.15"/>
+  <text x="82" y="431" text-anchor="middle" font-size="13" font-weight="700" fill="#34d399">5</text>
+  <text x="114" y="424" font-size="12" font-weight="700" fill="#f7f6f3">NarrationGenerator</text>
+  <text x="114" y="441" font-size="11" fill="#888">Kokoro-82M ONNX TTS → WAV · local · no API key</text>
+
+  <!-- Stage 6 -->
+  <rect x="64" y="462" width="432" height="52" rx="8" fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="64" y="462" width="36" height="52" rx="8" fill="#f87171" opacity="0.15"/>
+  <rect x="88" y="462" width="8" height="52" fill="#f87171" opacity="0.15"/>
+  <text x="82" y="493" text-anchor="middle" font-size="13" font-weight="700" fill="#f87171">6</text>
+  <text x="114" y="486" font-size="12" font-weight="700" fill="#f7f6f3">GraphLinker</text>
+  <text x="114" y="503" font-size="11" fill="#888">Quality gate → autonomous publish decision</text>
+
+  <!-- ── ARROW between panels ───────────────────────── -->
+  <!-- Artifact label -->
+  <rect x="548" y="240" width="104" height="50" rx="8" fill="#1a1a1a" stroke="#e8c547" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="600" y="261" text-anchor="middle" font-size="10" fill="#e8c547">journeys.json</text>
+  <text x="600" y="277" text-anchor="middle" font-size="10" fill="#e8c547">audio/*.wav</text>
+  <!-- Arrow line -->
+  <line x1="520" y1="265" x2="548" y2="265" stroke="#e8c547" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="652" y1="265" x2="680" y2="265" stroke="#e8c547" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="676,260 686,265 676,270" fill="#e8c547"/>
+
+  <!-- ── RIGHT PANEL: Web Runtime ───────────────────── -->
+  <rect x="680" y="75" width="480" height="280" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+  <rect x="680" y="75" width="480" height="44" rx="12" fill="#2a2a2a"/>
+  <rect x="680" y="107" width="480" height="12" fill="#2a2a2a"/>
+  <text x="920" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#34d399" letter-spacing="1">② WEB RUNTIME</text>
+  <text x="920" y="132" text-anchor="middle" font-size="11" fill="#888">serve-time · no AI key required</text>
+
+  <text x="704" y="162" font-size="12" fill="#f7f6f3">⬡  FastAPI + Jinja2 + HTMX</text>
+  <text x="704" y="186" font-size="12" fill="#f7f6f3">⬡  REST API <tspan fill="#888">/api/* with CORS</tspan></text>
+  <text x="704" y="210" font-size="12" fill="#f7f6f3">⬡  MiniLM semantic search <tspan fill="#888">local · ~10ms</tspan></text>
+  <text x="704" y="234" font-size="12" fill="#f7f6f3">⬡  Rate limiter + request queue</text>
+  <text x="704" y="258" font-size="12" fill="#f7f6f3">⬡  Background worker <tspan fill="#888">runs pipeline on new requests</tspan></text>
+  <text x="704" y="294" font-size="11" fill="#555" font-style="italic">All content pre-generated · runtime serves static files</text>
+
+  <!-- ── ADK CONCEPTS ───────────────────────────────── -->
+  <rect x="680" y="380" width="480" height="175" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+  <rect x="680" y="380" width="480" height="38" rx="12" fill="#2a2a2a"/>
+  <rect x="680" y="406" width="480" height="12" fill="#2a2a2a"/>
+  <text x="920" y="404" text-anchor="middle" font-size="12" font-weight="700" fill="#f7f6f3" letter-spacing="1">THREE ADK CONCEPTS</text>
+
+  <!-- Concept 1 -->
+  <rect x="696" y="428" width="10" height="10" rx="2" fill="#e8c547"/>
+  <text x="714" y="438" font-size="12" font-weight="700" fill="#e8c547">Multi-agent pipeline</text>
+  <text x="714" y="454" font-size="11" fill="#888">6 LlmAgents · ADK Runner · InMemorySessionService</text>
+
+  <!-- Concept 2 -->
+  <rect x="696" y="470" width="10" height="10" rx="2" fill="#a78bfa"/>
+  <text x="714" y="480" font-size="12" font-weight="700" fill="#a78bfa">MCP server</text>
+  <text x="714" y="496" font-size="11" fill="#888">search_track (iTunes/Deezer) · verify_recording (MusicBrainz) · search_wikipedia</text>
+
+  <!-- Concept 3 -->
+  <rect x="696" y="512" width="10" height="10" rx="2" fill="#34d399"/>
+  <text x="714" y="522" font-size="12" font-weight="700" fill="#34d399">Agent skills</text>
+  <text x="714" y="538" font-size="11" fill="#888">Custom tools called autonomously · preview URLs never LLM-generated</text>
+
+  <!-- Footer -->
+  <text x="600" y="682" text-anchor="middle" font-size="11" fill="#444">google-adk · gemini-2.5-flash · kokoro-82m onnx · fastapi · htmx · minilm · itunes · deezer · musicbrainz · wikipedia</text>
+
+</svg>

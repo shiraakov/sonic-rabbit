@@ -1,0 +1,288 @@
+{% extends "base.html" %}
+{% block title %}{{ journey.title }} | Sonic Rabbit{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb">
+  <a href="/" class="breadcrumb-item">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">{{ journey.title }}</span>
+  <a href="/j/{{ journey.id }}/next" class="breadcrumb-next">Next journey →</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="journey-hero">
+  <div class="hero-collage">
+    {% for song in journey.songs if song.image_url %}
+    <img class="hero-collage-img" src="{{ song.image_url }}" alt="" referrerpolicy="no-referrer" aria-hidden="true">
+    {% endfor %}
+    <div class="hero-collage-overlay"></div>
+  </div>
+  <div class="journey-hero-text">
+    <h1 class="journey-title">{{ journey.title }}</h1>
+    {% if journey.subtitle %}
+    <p class="journey-subtitle">{{ journey.subtitle }}</p>
+    {% endif %}
+    <div class="journey-blurb">{{ journey.blurb }}</div>
+
+    <div class="player-controls">
+      {% if journey.intro_audio_url %}
+      <audio id="journey-intro" src="{{ journey.intro_audio_url }}"></audio>
+      {% endif %}
+      <button id="play-pause-btn" class="btn btn--primary play-btn" onclick="togglePlayPause()">
+        ▶ Start listening
+      </button>
+      <span class="now-playing">
+        <span class="waveform" id="waveform" aria-hidden="true">
+          <span class="waveform-bar"></span>
+          <span class="waveform-bar"></span>
+          <span class="waveform-bar"></span>
+          <span class="waveform-bar"></span>
+        </span>
+        <span id="now-playing"></span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="steps-container" id="steps-container">
+  {% if song %}
+  {% set journey_id = journey.id %}
+  {% include "_song_step.html" %}
+  {% endif %}
+
+  {% for s in rest_songs %}
+  <div id="step-{{ s.position }}" class="step-placeholder">
+    <span class="step-placeholder-num">{{ s.position }}</span>
+    <span class="step-placeholder-title">{{ s.title }}</span>
+    <span class="step-placeholder-artist">— {{ s.artist }}</span>
+    <span class="step-placeholder-lock">🔒</span>
+  </div>
+  {% endfor %}
+
+  {% if journey.closing_paragraph %}
+  <div id="conclusion" class="song-step conclusion-step" style="display:none">
+    <div class="song-step-header">
+      <span class="step-num">✦</span>
+      <div class="step-meta">
+        <h2 class="step-title">Closing thoughts</h2>
+      </div>
+    </div>
+    <div class="podcast-unit">
+      {% if journey.outro_audio_url %}
+      <div class="narration-player">
+        <span class="narration-label">♪ Narration</span>
+        <audio id="journey-outro" controls src="{{ journey.outro_audio_url }}"></audio>
+      </div>
+      {% endif %}
+      <div class="song-blurb">{{ journey.closing_paragraph }}</div>
+    </div>
+    <div class="step-actions">
+      <a href="/j/{{ journey.id }}/end" class="btn btn--primary">Finish journey →</a>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+(function () {
+  var JID   = {{ journey.id | tojson }};
+  var TOTAL = {{ total }};
+  var paused = false;
+  var currentAudio = null;
+  var currentStepPos = undefined;
+
+  function nowPlaying(msg) {
+    var el = document.getElementById('now-playing');
+    if (el) el.textContent = msg;
+    var wf = document.getElementById('waveform');
+    if (wf) wf.classList.toggle('active', !!msg);
+  }
+
+  function setPlayBtn(playing) {
+    var btn = document.getElementById('play-pause-btn');
+    if (!btn) return;
+    btn.textContent = playing ? '⏸ Pause' : '▶ Resume';
+  }
+
+  function setStepPlaying(pos, active) {
+    var step = document.getElementById('step-' + pos);
+    if (step) step.classList.toggle('is-playing', active);
+  }
+
+  function confetti() {
+    var colors = ['#CC782F','#C29343','#8A67AB','#487CA5','#F8ECDF','#FAF3DD'];
+    var btn = document.getElementById('play-pause-btn');
+    var rect = btn ? btn.getBoundingClientRect() : {left: window.innerWidth/2, top: window.innerHeight/2};
+    for (var i = 0; i < 32; i++) {
+      var el = document.createElement('div');
+      el.className = 'confetti-piece';
+      el.style.cssText = [
+        'left:'  + (rect.left + rect.width/2 + (Math.random()-0.5)*120) + 'px',
+        'top:'   + (rect.top  + rect.height/2) + 'px',
+        'background:' + colors[Math.floor(Math.random()*colors.length)],
+        'animation-delay:' + (Math.random()*0.4) + 's',
+        'animation-duration:' + (1.1 + Math.random()*0.6) + 's',
+      ].join(';');
+      document.body.appendChild(el);
+      setTimeout(function(e){ e.remove(); }, 2200, el);
+    }
+  }
+
+  window.togglePlayPause = function () {
+    var btn = document.getElementById('play-pause-btn');
+    if (!currentAudio) {
+      // First press — start the chain
+      btn.textContent = '⏸ Pause';
+      startChain();
+      return;
+    }
+    if (paused) {
+      paused = false;
+      currentAudio.play().catch(function () {});
+      setPlayBtn(true);
+    } else {
+      paused = true;
+      currentAudio.pause();
+      setPlayBtn(false);
+    }
+  };
+
+  window.showConclusion = function (autoPlay) {
+    if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+    paused = false;
+    var el = document.getElementById('conclusion');
+    if (el) {
+      el.style.display = '';
+      setTimeout(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 30);
+    }
+    var outro = document.getElementById('journey-outro');
+    if (outro && autoPlay) {
+      playAudio(outro, 'Closing narration', function () {
+        nowPlaying('');
+        setPlayBtn(false);
+        var btn = document.getElementById('play-pause-btn');
+        if (btn) btn.textContent = '✓ Done';
+        confetti();
+      });
+    }
+  };
+
+  // Called by the Skip button so auto-chain knows the step was already loaded
+  window.skipToStep = function (pos) {
+    // stop current audio cleanly
+    if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+    paused = false;
+    // htmx handles the swap; we wire up the new step after swap
+    document.body.addEventListener('htmx:afterSwap', function h() {
+      document.body.removeEventListener('htmx:afterSwap', h);
+      setTimeout(function () { wireStep(pos, true); }, 30);
+    });
+  };
+
+  function playAudio(el, label, onEnded, stepPos) {
+    if (!el) { onEnded(); return; }
+    if (currentStepPos !== undefined) setStepPlaying(currentStepPos, false);
+    currentAudio = el;
+    currentStepPos = stepPos;
+    if (stepPos !== undefined) setStepPlaying(stepPos, true);
+    nowPlaying(label);
+    setPlayBtn(true);
+    el.play().catch(function () {
+      // play() rejected — user hasn't interacted yet, or blocked
+      setPlayBtn(false);
+      // When they press play manually, the ended handler is already wired
+    });
+    el.addEventListener('ended', function h() {
+      el.removeEventListener('ended', h);
+      if (!paused) onEnded();
+      else {
+        // Resume was pressed after end — just call onEnded
+        el.addEventListener('play', function r() {
+          el.removeEventListener('play', r);
+        });
+        onEnded();
+      }
+    });
+  }
+
+  function wireStep(pos, doPlay) {
+    var narr = document.getElementById('narr-' + pos);
+    var prev = document.getElementById('prev-' + pos);
+
+    if (!narr && !prev) return; // no audio on this step — stay, let user skip manually
+
+    function done() {
+      setStepPlaying(pos, false);
+      nowPlaying('');
+      setPlayBtn(false);
+      var btn = document.getElementById('play-pause-btn');
+      if (btn) btn.textContent = '✓ Done';
+      confetti();
+    }
+
+    function afterPrev() {
+      setStepPlaying(pos, false);
+      if (pos >= TOTAL) {
+        showConclusion(true);
+        return;
+      }
+      loadStep(pos + 1);
+    }
+
+    function afterNarr() {
+      if (prev) {
+        setTimeout(function () {
+          if (!paused) playAudio(prev, 'Song ' + pos + ' of ' + TOTAL, afterPrev, pos);
+        }, 2000);
+      } else {
+        afterPrev();
+      }
+    }
+
+    if (narr && doPlay) {
+      playAudio(narr, 'Narration — song ' + pos + ' of ' + TOTAL, afterNarr, pos);
+    } else if (narr) {
+      narr.addEventListener('ended', afterNarr, {once: true});
+    } else {
+      if (doPlay) playAudio(prev, 'Song ' + pos + ' of ' + TOTAL, afterPrev, pos);
+      else prev.addEventListener('ended', afterPrev, {once: true});
+    }
+  }
+
+  function loadStep(pos) {
+    htmx.ajax('GET', '/j/' + JID + '/step/' + pos, {
+      target: '#step-' + pos,
+      swap: 'outerHTML'
+    });
+    document.body.addEventListener('htmx:afterSwap', function h() {
+      document.body.removeEventListener('htmx:afterSwap', h);
+      var el = document.getElementById('step-' + pos);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(function () { wireStep(pos, true); }, 2050);
+    });
+  }
+
+  function startChain() {
+    var intro = document.getElementById('journey-intro');
+    if (intro) {
+      playAudio(intro, 'Journey intro', function () { wireStep(1, true); });
+    } else {
+      wireStep(1, true);
+    }
+  }
+
+  var narr1 = document.getElementById('narr-1');
+  var prev1 = document.getElementById('prev-1');
+  if (narr1 || prev1) wireStep(1, false);
+
+  // Spacebar = play/pause
+  document.addEventListener('keydown', function(e) {
+    if (e.code === 'Space' && e.target === document.body) {
+      e.preventDefault();
+      togglePlayPause();
+    }
+  });
+})();
+</script>
+{% endblock %}

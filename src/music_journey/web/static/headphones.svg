@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30" fill="none">
+  <!-- Band — lower, tighter arc between closer cups -->
+  <path d="M14 19 C14 13 26 13 26 19"
+        stroke="#2a2520" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Left cup shell -->
+  <ellipse cx="14" cy="22" rx="5.5" ry="6.5" fill="#2a2520"/>
+  <!-- Left cup cushion -->
+  <ellipse cx="14" cy="22" rx="3.8" ry="4.8" fill="#3e3830"/>
+  <!-- Left cup driver -->
+  <ellipse cx="14" cy="22" rx="2" ry="2.6" fill="#524840"/>
+  <!-- Right cup shell -->
+  <ellipse cx="26" cy="22" rx="5.5" ry="6.5" fill="#2a2520"/>
+  <!-- Right cup cushion -->
+  <ellipse cx="26" cy="22" rx="3.8" ry="4.8" fill="#3e3830"/>
+  <!-- Right cup driver -->
+  <ellipse cx="26" cy="22" rx="2" ry="2.6" fill="#524840"/>
+</svg>

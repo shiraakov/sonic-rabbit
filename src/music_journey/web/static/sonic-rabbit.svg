@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+  <!-- Left ear -->
+  <ellipse cx="12" cy="9" rx="3.5" ry="7.5" fill="#37352F" transform="rotate(-8 12 9)"/>
+  <!-- Right ear -->
+  <ellipse cx="24" cy="9" rx="3.5" ry="7.5" fill="#37352F" transform="rotate(8 24 9)"/>
+  <!-- Head -->
+  <circle cx="18" cy="24" r="10" fill="#37352F"/>
+  <!-- Eyes -->
+  <circle cx="14.5" cy="22" r="1.6" fill="#FAFAF7"/>
+  <circle cx="21.5" cy="22" r="1.6" fill="#FAFAF7"/>
+  <!-- Pupils -->
+  <circle cx="14.9" cy="22.3" r=".7" fill="#37352F"/>
+  <circle cx="21.9" cy="22.3" r=".7" fill="#37352F"/>
+  <!-- Nose -->
+  <ellipse cx="18" cy="26.5" rx="1.4" ry="1" fill="#CC782F"/>
+  <!-- Headphone band -->
+  <path d="M 5.5 22 C 5.5 9 30.5 9 30.5 22" stroke="#CC782F" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Left cup -->
+  <rect x="2" y="19.5" width="6" height="7" rx="2" fill="#CC782F"/>
+  <!-- Right cup -->
+  <rect x="28" y="19.5" width="6" height="7" rx="2" fill="#CC782F"/>
+  <!-- Cup highlight -->
+  <rect x="3.5" y="21" width="2" height="2" rx="1" fill="rgba(255,255,255,0.35)"/>
+  <rect x="29.5" y="21" width="2" height="2" rx="1" fill="rgba(255,255,255,0.35)"/>
+</svg>

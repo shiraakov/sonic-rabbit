@@ -1,0 +1,134 @@
+{
+  "eval_set_id": "journey_researcher",
+  "name": "journey_researcher",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "great_migration_journey",
+      "conversation": [
+        {
+          "invocation_id": "inv-1",
+          "user_content": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "Create a journey for this theme: the Great Migration\nMin songs: 6, max songs: 10",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "{\"title\": \"From the Delta to Detroit\", \"subtitle\": \"How the Great Migration transformed American music\", \"theme\": \"geopolitical movement\", \"blurb\": \"Between 1910 and 1970, six million Black Americans moved north...\", \"closing_paragraph\": \"The arc of the Great Migration...\", \"songs\": [{\"position\": 1, \"title\": \"Cross Road Blues\", \"artist\": \"Robert Johnson\", \"month_year\": \"November 1936\", \"place\": \"San Antonio, Texas\", \"blurb\": \"Robert Johnson recorded this in a makeshift studio in a San Antonio hotel room in November 1936...\"}, {\"position\": 2, \"title\": \"Hoochie Coochie Man\", \"artist\": \"Muddy Waters\", \"month_year\": \"January 1954\", \"place\": \"Chicago, Illinois\", \"blurb\": \"Muddy Waters left the Delta in 1943 and arrived in Chicago...\"}]}",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "tool_responses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1751328000.0,
+          "rubrics": null,
+          "app_details": null
+        }
+      ],
+      "conversation_scenario": null,
+      "session_input": null,
+      "creation_timestamp": 1751328000.0,
+      "rubrics": null,
+      "final_session_state": {}
+    },
+    {
+      "eval_id": "blurbs_must_mention_artist_year_place",
+      "conversation": [
+        {
+          "invocation_id": "inv-1",
+          "user_content": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "Create a journey for this theme: songs about shoes\nMin songs: 6, max songs: 8",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "media_resolution": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "inline_data": null,
+                "text": "{\"title\": \"From the Delta to Detroit\", \"subtitle\": \"How the Great Migration transformed American music\", \"theme\": \"geopolitical movement\", \"blurb\": \"Between 1910 and 1970, six million Black Americans moved north...\", \"closing_paragraph\": \"The arc of the Great Migration...\", \"songs\": [{\"position\": 1, \"title\": \"Cross Road Blues\", \"artist\": \"Robert Johnson\", \"month_year\": \"November 1936\", \"place\": \"San Antonio, Texas\", \"blurb\": \"Robert Johnson recorded this in a makeshift studio in a San Antonio hotel room in November 1936...\"}, {\"position\": 2, \"title\": \"Hoochie Coochie Man\", \"artist\": \"Muddy Waters\", \"month_year\": \"January 1954\", \"place\": \"Chicago, Illinois\", \"blurb\": \"Muddy Waters left the Delta in 1943 and arrived in Chicago...\"}]}",
+                "thought": null,
+                "thought_signature": null,
+                "video_metadata": null,
+                "tool_call": null,
+                "tool_response": null,
+                "part_metadata": null
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "tool_responses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1751328000.0,
+          "rubrics": null,
+          "app_details": null
+        }
+      ],
+      "conversation_scenario": null,
+      "session_input": null,
+      "creation_timestamp": 1751328000.0,
+      "rubrics": null,
+      "final_session_state": {}
+    }
+  ],
+  "creation_timestamp": 1751328000.0
+}

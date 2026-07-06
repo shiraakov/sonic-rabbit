@@ -1,0 +1,32 @@
+<div class="playlist-header">
+  <h3 class="playlist-title">{% if entity %}{{ entity.name }} — Playlist{% else %}Playlist{% endif %}</h3>
+  <button class="playlist-close" onclick="document.getElementById('playlist-panel').classList.add('hidden')">✕</button>
+</div>
+{% if playlist %}
+<ul class="playlist-track-list">
+  {% for song in playlist %}
+  <li class="playlist-track">
+    <div class="playlist-track-art">
+      {% if song.image_url %}
+      <img src="{{ song.image_url }}" alt="{{ song.name }}" loading="lazy" referrerpolicy="no-referrer">
+      {% else %}
+      <img src="/static/placeholder.svg" alt="" aria-hidden="true" style="width:40px;height:40px;border-radius:4px">
+      {% endif %}
+    </div>
+    <div class="playlist-track-info">
+      <a href="/e/{{ song.id }}" class="playlist-track-name">{{ song.name }}</a>
+      {% if song.attributes.year %}<span class="song-year">{{ song.attributes.year }}</span>{% endif %}
+    </div>
+    {% if song.attributes.preview_url %}
+    <audio controls preload="none" class="playlist-audio">
+      <source src="{{ song.attributes.preview_url }}" type="audio/mp4">
+    </audio>
+    {% else %}
+    <span class="no-preview">no preview</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="playlist-empty">No songs found for this entry.</p>
+{% endif %}

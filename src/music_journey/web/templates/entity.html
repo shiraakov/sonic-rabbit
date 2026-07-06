@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% block title %}{{ entity.name }} — Sonic Rabbit{% endblock %}
+
+{% block breadcrumb %}
+{% if trail_entities or origin_entity %}
+<nav class="breadcrumb" aria-label="Journey trail">
+  <span class="breadcrumb-label">Journey:</span>
+  {% if origin_entity %}
+  <a class="breadcrumb-origin" href="/e/{{ origin_entity.id }}">
+    ⌂ {{ origin_entity.name }}
+  </a>
+  {% endif %}
+  {% for te in trail_entities %}
+  <span class="breadcrumb-sep">›</span>
+  <a class="breadcrumb-item" href="/e/{{ te.id }}?origin={{ origin_param }}&trail={{ trail_param.split(',')[:loop.index]|join(',') }}">
+    {{ te.name }}
+  </a>
+  {% endfor %}
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">{{ entity.name }}</span>
+</nav>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+{# ── STYLE PAGE ─────────────────────────────────────────────────── #}
+{% if entity.type == "style" %}
+
+<div class="hero {% if entity.image_url %}hero--image{% endif %}">
+  {% if entity.image_url %}
+  <img class="hero-bg" src="{{ entity.image_url }}" alt="{{ entity.name }}" referrerpolicy="no-referrer">
+  <div class="hero-overlay"></div>
+  {% endif %}
+  <div class="hero-text">
+    <p class="entity-type-label">Style</p>
+    <h1 class="hero-title">{{ entity.name }}</h1>
+    {% if entity.era %}<span class="era-badge era-badge--lg">{{ entity.era }}</span>{% endif %}
+    {% if entity.attributes.origin_place %}
+    <p class="hero-meta">{{ entity.attributes.origin_place }}</p>
+    {% endif %}
+    <p class="hero-summary">{{ entity.summary }}</p>
+    {% if playlist %}
+    <button
+      class="btn btn--primary"
+      hx-get="/e/{{ entity.id }}/playlist-panel"
+      hx-target="#playlist-panel"
+      hx-swap="innerHTML"
+      hx-on::after-request="document.getElementById('playlist-panel').classList.remove('hidden')"
+    >▶ Play Style Playlist</button>
+    {% endif %}
+  </div>
+</div>
+
+{% if entity.attributes.history %}
+<section class="section" id="history">
+  <h2 class="section-title">History</h2>
+  <p class="prose">{{ entity.attributes.history }}</p>
+</section>
+{% endif %}
+
+{% if links.has_defining_artist %}
+<section class="section">
+  <h2 class="section-title">Defining Artists</h2>
+  <div class="card-grid">
+    {% for artist in links.has_defining_artist %}
+    <a href="{{ nav_to(artist.id) }}" class="card">
+      <div class="card-img-wrap">
+        {% if artist.image_url %}
+        <img src="{{ artist.image_url }}" alt="{{ artist.name }}" loading="lazy" referrerpolicy="no-referrer">
+        {% else %}
+        <img src="/static/placeholder.svg" alt="" aria-hidden="true">
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <p class="card-name">{{ artist.name }}</p>
+        {% if artist.era %}<span class="era-badge">{{ artist.era }}</span>{% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if entity.attributes.influenced_by %}
+<section class="section">
+  <h2 class="section-title">Influenced by</h2>
+  <div class="tag-list">
+    {% for name in entity.attributes.influenced_by %}
+    <span class="tag">{{ name }}</span>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if entity.attributes.influenced %}
+<section class="section">
+  <h2 class="section-title">Legacy — shaped</h2>
+  <div class="tag-list">
+    {% for name in entity.attributes.influenced %}
+    <span class="tag">{{ name }}</span>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if links.has_anecdote %}
+<section class="section">
+  <h2 class="section-title">Anecdotes</h2>
+  {% for anecdote in links.has_anecdote %}
+  <blockquote class="anecdote">{{ anecdote.name }}</blockquote>
+  {% endfor %}
+</section>
+{% endif %}
+
+
+{# ── ARTIST PAGE ─────────────────────────────────────────────────── #}
+{% elif entity.type == "artist" %}
+
+<div class="hero {% if entity.image_url %}hero--image{% endif %}">
+  {% if entity.image_url %}
+  <img class="hero-bg" src="{{ entity.image_url }}" alt="{{ entity.name }}" referrerpolicy="no-referrer">
+  <div class="hero-overlay"></div>
+  {% endif %}
+  <div class="hero-text">
+    <p class="entity-type-label">Artist</p>
+    <h1 class="hero-title">{{ entity.name }}</h1>
+    {% if entity.era %}<span class="era-badge era-badge--lg">{{ entity.era }}</span>{% endif %}
+    {% if entity.attributes.origin_place %}
+    <p class="hero-meta">{{ entity.attributes.origin_place }}</p>
+    {% endif %}
+    <p class="hero-summary">{{ entity.summary }}</p>
+    {% if playlist %}
+    <button
+      class="btn btn--primary"
+      hx-get="/e/{{ entity.id }}/playlist-panel"
+      hx-target="#playlist-panel"
+      hx-swap="innerHTML"
+      hx-on::after-request="document.getElementById('playlist-panel').classList.remove('hidden')"
+    >▶ Play Artist Playlist</button>
+    {% endif %}
+  </div>
+</div>
+
+{% if entity.attributes.bio %}
+<section class="section">
+  <h2 class="section-title">Biography</h2>
+  <p class="prose">{{ entity.attributes.bio }}</p>
+</section>
+{% endif %}
+
+{% if links.has_top_song %}
+<section class="section">
+  <h2 class="section-title">Top Songs</h2>
+  <div class="song-list">
+    {% for song in links.has_top_song %}
+    <div class="song-row">
+      <div class="song-art">
+        {% if song.image_url %}
+        <img src="{{ song.image_url }}" alt="{{ song.name }}" loading="lazy" referrerpolicy="no-referrer">
+        {% else %}
+        <img src="/static/placeholder.svg" alt="" aria-hidden="true" style="width:52px;height:52px;border-radius:4px">
+        {% endif %}
+      </div>
+      <div class="song-info">
+        <a href="{{ nav_to(song.id) }}" class="song-title">{{ song.name }}</a>
+        {% if song.attributes.year %}<span class="song-year">{{ song.attributes.year }}</span>{% endif %}
+        {% if song.attributes.album %}<span class="song-album">{{ song.attributes.album }}</span>{% endif %}
+      </div>
+      {% if song.attributes.preview_url %}
+      <audio class="song-preview" controls preload="none">
+        <source src="{{ song.attributes.preview_url }}" type="audio/mp4">
+      </audio>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if entity.attributes.influenced_by %}
+<section class="section">
+  <h2 class="section-title">Influenced by</h2>
+  <div class="tag-list">
+    {% for name in entity.attributes.influenced_by %}
+    <span class="tag">{{ name }}</span>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if entity.attributes.influenced %}
+<section class="section">
+  <h2 class="section-title">Legacy</h2>
+  <div class="tag-list">
+    {% for name in entity.attributes.influenced %}
+    <span class="tag">{{ name }}</span>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if links.has_anecdote %}
+<section class="section">
+  <h2 class="section-title">Anecdotes</h2>
+  {% for anecdote in links.has_anecdote %}
+  <blockquote class="anecdote">{{ anecdote.name }}</blockquote>
+  {% endfor %}
+</section>
+{% endif %}
+
+
+{# ── SONG PAGE ─────────────────────────────────────────────────── #}
+{% else %}
+
+<div class="hero song-hero">
+  <div class="song-hero-art">
+    {% if entity.image_url %}
+    <img src="{{ entity.image_url }}" alt="{{ entity.name }}" referrerpolicy="no-referrer">
+    {% else %}
+    <img src="/static/placeholder.svg" alt="" aria-hidden="true" style="width:160px;height:160px;border-radius:8px">
+    {% endif %}
+  </div>
+  <div class="hero-text">
+    <p class="entity-type-label">Song</p>
+    <h1 class="hero-title">{{ entity.name }}</h1>
+    {% if parent_artist %}
+    <p class="hero-meta">
+      <a href="{{ nav_to(parent_artist.id) }}" class="link--subtle">{{ parent_artist.name }}</a>
+    </p>
+    {% endif %}
+    {% if entity.attributes.year %}<span class="era-badge era-badge--lg">{{ entity.attributes.year }}</span>{% endif %}
+    {% if entity.attributes.album %}<p class="hero-meta">{{ entity.attributes.album }}</p>{% endif %}
+    {% if entity.attributes.lyricist %}<p class="hero-meta text--secondary">Lyrics: {{ entity.attributes.lyricist }}</p>{% endif %}
+    <p class="hero-summary">{{ entity.summary }}</p>
+  </div>
+</div>
+
+{% if entity.attributes.preview_url %}
+<section class="section player-section">
+  <h2 class="section-title">Listen — 30 second preview</h2>
+  <div class="player-wrap">
+    <audio class="full-player" controls autoplay>
+      <source src="{{ entity.attributes.preview_url }}" type="audio/mp4">
+      Your browser does not support audio playback.
+    </audio>
+    <p class="player-note">Preview via {{ entity.attributes.source | upper if entity.attributes.source else 'streaming service' }}</p>
+  </div>
+</section>
+{% endif %}
+
+{% if streaming %}
+<section class="section">
+  <h2 class="section-title">Open in your streaming service</h2>
+  <div class="streaming-links">
+    <a href="{{ streaming.spotify }}" target="_blank" rel="noopener" class="streaming-btn streaming-btn--spotify">Spotify</a>
+    <a href="{{ streaming.apple_music }}" target="_blank" rel="noopener" class="streaming-btn streaming-btn--apple">Apple Music</a>
+    <a href="{{ streaming.youtube }}" target="_blank" rel="noopener" class="streaming-btn streaming-btn--youtube">YouTube</a>
+  </div>
+</section>
+{% endif %}
+
+{% if links.has_anecdote %}
+<section class="section">
+  <h2 class="section-title">Anecdotes</h2>
+  {% for anecdote in links.has_anecdote %}
+  <blockquote class="anecdote">{{ anecdote.name }}</blockquote>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

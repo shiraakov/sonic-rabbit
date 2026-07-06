@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{{ journey.title }} — End | Sonic Rabbit{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb">
+  <a href="/" class="breadcrumb-item">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="/j/{{ journey.id }}" class="breadcrumb-item">{{ journey.title }}</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">End</span>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="journey-end">
+  <div class="journey-end-header">
+    <span class="end-checkmark">✓</span>
+    <h1 class="end-title">Journey complete</h1>
+    <p class="end-subtitle">{{ journey.title }}</p>
+  </div>
+
+  <div class="end-actions">
+    <a href="/j/{{ journey.id }}/playlist.txt" class="btn btn--primary" download>
+      Download playlist ↓
+    </a>
+    <a href="/j/{{ journey.id }}/playlist.m3u" class="btn btn--outline" download>
+      Download .m3u
+    </a>
+  </div>
+
+  {% if related_journeys %}
+  <div class="related-journeys">
+    <p class="next-journey-label">Where to next</p>
+    <div class="related-journeys-grid">
+      {% for j in related_journeys %}
+      <a href="/j/{{ j.id }}" class="journey-card">
+        <div class="journey-card-img">
+          {% set cover = j.image_url or (j.songs | selectattr('image_url') | map(attribute='image_url') | first) %}
+          {% if cover %}
+          <img src="{{ cover }}" alt="{{ j.title }}" referrerpolicy="no-referrer">
+          {% else %}
+          <img src="/static/placeholder.svg" alt="" aria-hidden="true">
+          {% endif %}
+        </div>
+        <div class="journey-card-body">
+          <span class="theme-badge">{{ j.theme }}</span>
+          <p class="journey-card-title">{{ j.title }}</p>
+          {% if j.subtitle %}
+          <p class="journey-card-sub">{{ j.subtitle }}</p>
+          {% endif %}
+          <p class="journey-card-count">{{ j.songs|length }} songs</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <a href="/" class="link--subtle">← Browse all journeys</a>
+</div>
+{% endblock %}
