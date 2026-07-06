@@ -17,15 +17,16 @@ The app also learns what's missing. When a search finds nothing, it shows an hon
 ## Architecture
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 50, "rankSpacing": 60, "wrappingWidth": 900}} }%%
 flowchart TD
-    FE["🌐 BROWSER / FRONTEND
+    FE["🌐 BROWSER / FRONTEND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     1. Journey player + narration audio
     2. Search + prompt chips
     3. Request new journey form
     4. HTMX — no client JS state
     5. Served by FastAPI + Jinja2"]
 
-    JF["⚙️ JOURNEY FACTORY
+    JF["⚙️ JOURNEY FACTORY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     1. REST API + rate limiter + request queue
     2. Semantic search — MiniLM, local, no API key
     3. SongPicker → SongFetcher → ContentWriter → FactChecker → NarrationGenerator → GraphLinker
@@ -33,7 +34,7 @@ flowchart TD
     5. Kokoro-82M ONNX TTS — runs locally, no API key
     6. Quality gate — autonomous publish decision"]
 
-    DB[("🗄️ DATA STORE
+    DB[("🗄️ DATA STORE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     1. journeys.json — all published journeys
     2. audio/*.wav — pre-generated narration
     3. drafts/ — rejected by quality gate
